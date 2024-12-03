@@ -1,0 +1,29 @@
+2024-12-03 08:24:19.563  INFO 14556 --- [restartedMain] dev.m.backend.BackEndApplication         : Starting BackEndApplication using Java 1.8.0_202 on PTPM1-MANHND with PID 14556 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
+2024-12-03 08:24:19.576  INFO 14556 --- [restartedMain] dev.m.backend.BackEndApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-12-03 08:24:19.682  INFO 14556 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\admin\.m2\repository\com\oracle\ojdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/admin/.m2/repository/com/oracle/ojdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2024-12-03 08:24:19.682  INFO 14556 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\admin\.m2\repository\com\oracle\ojdbc\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/admin/.m2/repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_core.jar,file:/C:/Users/admin/.m2/repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_cert.jar,file:/C:/Users/admin/.m2/repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/admin/.m2/repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_cert.jar
+2024-12-03 08:24:19.682  INFO 14556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-03 08:24:20.847  INFO 14556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 08:24:20.996  INFO 14556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 2 JPA repository interfaces.
+2024-12-03 08:24:22.097  INFO 14556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-12-03 08:24:22.126  INFO 14556 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-03 08:24:22.127  INFO 14556 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-12-03 08:24:22.218  INFO 14556 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-03 08:24:22.218  INFO 14556 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2535 ms
+2024-12-03 08:24:22.257 DEBUG 14556 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
+2024-12-03 08:24:22.257 DEBUG 14556 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2024-12-03 08:24:22.528  INFO 14556 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 08:24:22.594  INFO 14556 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-12-03 08:24:22.853  INFO 14556 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-03 08:24:23.041  INFO 14556 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-INTRODUCE-V2 - Starting...
+2024-12-03 08:24:25.300  INFO 14556 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-INTRODUCE-V2 - Start completed.
+2024-12-03 08:24:25.335  INFO 14556 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-12-03 08:24:26.844  INFO 14556 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-03 08:24:26.857  INFO 14556 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 08:24:27.353  WARN 14556 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 08:24:27.445 DEBUG 14556 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-12-03 08:24:27.491 DEBUG 14556 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-03 08:24:27.547 DEBUG 14556 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-03 08:24:27.839  INFO 14556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-03 08:24:27.879  INFO 14556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-03 08:24:27.900  INFO 14556 --- [restartedMain] dev.m.backend.BackEndApplication         : Started BackEndApplication in 9.628 seconds (JVM running for 13.046)
