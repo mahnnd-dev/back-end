@@ -1,9 +1,9 @@
-package dev.m.backend.service.impl;
+package dev.m.service.impl;
 
-import dev.m.backend.obj.ResponseApi;
-import dev.m.backend.obj.SignInRequest;
-import dev.m.backend.obj.entity.User;
-import dev.m.backend.service.repo.UserRepository;
+import dev.m.obj.ResponseApi;
+import dev.m.obj.SignInRequest;
+import dev.m.obj.entity.User;
+import dev.m.service.repo.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

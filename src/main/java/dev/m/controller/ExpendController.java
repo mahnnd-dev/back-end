@@ -1,8 +1,10 @@
-package dev.m.backend.controller;
+package dev.m.controller;
 
-import dev.m.backend.obj.ResponseApi;
-import dev.m.backend.obj.entity.Expend;
-import dev.m.backend.service.impl.ExpendService;
+import dev.m.obj.ResponseApi;
+import dev.m.obj.entity.Expend;
+import dev.m.service.impl.ExpendService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Slf4j
 @Controller
 @RequestMapping("/api/expend")
+@Tag(name = "Payment Gateway Controller", description = "API Gateway")
 public class ExpendController {
     private final ExpendService service;
 
@@ -21,7 +24,7 @@ public class ExpendController {
     public ExpendController(ExpendService service) {
         this.service = service;
     }
-
+    @Operation(summary = "Tiếp nhận thông tin từ nghiệp vụ", description = "Trả về thông tin / kết quả")
     @ResponseBody
     @PostMapping("/add")
     public ResponseApi add(@RequestBody Expend request) {

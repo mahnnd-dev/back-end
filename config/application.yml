@@ -1,10 +1,10 @@
 application:
-  name: API-INTRODUCE-V2
+  name: API-BACKEND
   channel: SYSTEM
   organization: NEO JSC
   version: 1.0
   company: NEO JSC
-  team: SMSC Team
+  team: One Team
   author: ManhND
   create-date: 01/01/2024
 server:
@@ -46,10 +46,10 @@ spring:
   main:
     banner-mode: console
   datasource:
-    jdbc-url: jdbc:mysql://${app.module.ip-db}:3306/admin?useUnicode=yes&characterEncoding=UTF-8
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?user=postgres.ztfewtamedkgmpdhruyt&password=123456a@
+    username: postgres.ztfewtamedkgmpdhruyt
+    password: 123456a@
+    driver-class-name: org.postgresql.Driver
     minimum-idle: 1
     maximum-pool-size: 10
     auto-commit: true
@@ -61,10 +61,10 @@ spring:
     pool-name: ${application.name}
     data-source-properties: v$session.program=${application.name}
   datasource-log:
-    jdbc-url: jdbc:mysql://${app.module.ip-db-log}:3306/admin?useUnicode=yes&characterEncoding=UTF-8
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?user=postgres.ztfewtamedkgmpdhruyt&password=123456a@
+    username: postgres.ztfewtamedkgmpdhruyt
+    password: 123456a@
+    driver-class-name: org.postgresql.Driver
     minimum-idle: 1
     maximum-pool-size: 10
     auto-commit: false

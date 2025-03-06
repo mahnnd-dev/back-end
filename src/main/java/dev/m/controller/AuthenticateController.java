@@ -1,8 +1,8 @@
-package dev.m.backend.controller;
+package dev.m.controller;
 
-import dev.m.backend.obj.ResponseApi;
-import dev.m.backend.obj.SignInRequest;
-import dev.m.backend.service.impl.AuthenticateService;
+import dev.m.obj.ResponseApi;
+import dev.m.obj.SignInRequest;
+import dev.m.service.impl.AuthenticateService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

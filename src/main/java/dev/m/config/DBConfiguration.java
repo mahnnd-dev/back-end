@@ -1,4 +1,4 @@
-package dev.m.backend.config;
+package dev.m.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

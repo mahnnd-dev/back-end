@@ -1,4 +1,4 @@
-package dev.m.backend.obj.entity;
+package dev.m.obj.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

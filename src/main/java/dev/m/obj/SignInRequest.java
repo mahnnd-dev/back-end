@@ -1,4 +1,4 @@
-package dev.m.backend.obj;
+package dev.m.obj;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

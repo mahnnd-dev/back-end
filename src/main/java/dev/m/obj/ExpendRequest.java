@@ -1,6 +1,6 @@
-package dev.m.backend.obj;
+package dev.m.obj;
 
-import dev.m.backend.obj.entity.Expend;
+import dev.m.obj.entity.Expend;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
