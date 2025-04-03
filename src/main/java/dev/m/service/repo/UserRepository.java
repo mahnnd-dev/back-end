@@ -1,8 +1,7 @@
 package dev.m.service.repo;
 
-import dev.m.obj.entity.User;
+import dev.m.obj.entity.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findByUsername(String username);
+public interface UserRepository extends JpaRepository<Users, Long> {
 }

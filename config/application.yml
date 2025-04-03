@@ -7,8 +7,9 @@ application:
   team: One Team
   author: ManhND
   create-date: 01/01/2024
+  des: "API Backend tiếp nhận và xử lý thao tác người dùng"
 server:
-  port: 8080
+  port: 3000
   tomcat:
     max-threads: 1000
     accept-count: 2000
@@ -46,7 +47,7 @@ spring:
   main:
     banner-mode: console
   datasource:
-    jdbc-url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?user=postgres.ztfewtamedkgmpdhruyt&password=123456a@
+    jdbc-url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres?user=postgres.ztfewtamedkgmpdhruyt&password=123456a@
     username: postgres.ztfewtamedkgmpdhruyt
     password: 123456a@
     driver-class-name: org.postgresql.Driver
@@ -61,7 +62,7 @@ spring:
     pool-name: ${application.name}
     data-source-properties: v$session.program=${application.name}
   datasource-log:
-    jdbc-url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?user=postgres.ztfewtamedkgmpdhruyt&password=123456a@
+    jdbc-url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres?user=postgres.ztfewtamedkgmpdhruyt&password=123456a@
     username: postgres.ztfewtamedkgmpdhruyt
     password: 123456a@
     driver-class-name: org.postgresql.Driver
@@ -76,6 +77,7 @@ spring:
     pool-name: ${application.name}-Log
     data-source-properties: v$session.program=${application.name}-Log
   jpa:
+    open-in-view: false
     hibernate:
       ddl-auto: update
     show-sql: true

@@ -1,69 +1,945 @@
-2025-03-06 21:11:02.580  INFO 5104 --- [restartedMain] dev.m.Application                        : Starting Application using Java 1.8.0_202 on PTPM1-MANHND with PID 5104 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
-2025-03-06 21:11:02.586  INFO 5104 --- [restartedMain] dev.m.Application                        : No active profile set, falling back to 1 default profile: "default"
-2025-03-06 21:11:02.676  INFO 5104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-06 21:11:03.676  INFO 5104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-06 21:11:03.729  INFO 5104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
-2025-03-06 21:11:04.401  INFO 5104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2025-03-06 21:11:04.411  INFO 5104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-06 21:11:04.412  INFO 5104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
-2025-03-06 21:11:04.543  INFO 5104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-06 21:11:04.543  INFO 5104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1864 ms
-2025-03-06 21:11:04.556 DEBUG 5104 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
-2025-03-06 21:11:04.556 DEBUG 5104 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2025-03-06 21:11:04.970  INFO 5104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-06 21:11:05.067  INFO 5104 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2025-03-06 21:11:05.397  INFO 5104 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2025-03-06 21:11:05.531  INFO 5104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Starting...
-2025-03-06 21:11:07.678  INFO 5104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Start completed.
-2025-03-06 21:11:08.181  INFO 5104 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2025-03-06 21:11:10.294  INFO 5104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-03-06 21:11:10.310  INFO 5104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-06 21:11:10.320  WARN 5104 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.des' in value "${application.des}"
-2025-03-06 21:11:10.320  INFO 5104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-06 21:11:10.324  INFO 5104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Shutdown initiated...
-2025-03-06 21:11:10.345  INFO 5104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Shutdown completed.
-2025-03-06 21:11:10.348  INFO 5104 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-03-06 21:11:10.362  INFO 5104 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+2025-04-02 15:09:44.624  INFO 16136 --- [restartedMain] dev.m.Application                        : Starting Application using Java 1.8.0_202 on PTPM1-MANHND with PID 16136 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
+2025-04-02 15:09:44.629  INFO 16136 --- [restartedMain] dev.m.Application                        : No active profile set, falling back to 1 default profile: "default"
+2025-04-02 15:09:44.702  INFO 16136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-02 15:09:45.792  INFO 16136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02 15:09:45.859  INFO 16136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2025-04-02 15:09:46.546  INFO 16136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-04-02 15:09:46.556  INFO 16136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02 15:09:46.556  INFO 16136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-04-02 15:09:46.673  INFO 16136 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-02 15:09:46.673  INFO 16136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1970 ms
+2025-04-02 15:09:46.687 DEBUG 16136 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
+2025-04-02 15:09:46.687 DEBUG 16136 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2025-04-02 15:09:46.848  INFO 16136 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-02 15:09:46.907  INFO 16136 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-04-02 15:09:47.126  INFO 16136 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-02 15:09:47.236  INFO 16136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Starting...
+2025-04-02 15:09:49.063  INFO 16136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Start completed.
+2025-04-02 15:09:49.112  INFO 16136 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2025-04-02 15:09:50.083  WARN 16136 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-04-02 15:09:50.083  WARN 16136 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "category" does not exist, skipping
+2025-04-02 15:09:50.294  WARN 16136 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-04-02 15:09:50.294  WARN 16136 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "transaction" does not exist, skipping
+2025-04-02 15:09:50.758  INFO 16136 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-02 15:09:50.794  INFO 16136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02 15:09:51.429  WARN 16136 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-02 15:09:51.533 DEBUG 16136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-04-02 15:09:52.019 DEBUG 16136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-04-02 15:09:52.056 DEBUG 16136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-02 15:09:52.078 DEBUG 16136 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-02 15:09:52.292  INFO 16136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-02 15:09:52.330  INFO 16136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-04-02 15:09:52.341  INFO 16136 --- [restartedMain] dev.m.Application                        : Started Application in 8.327 seconds (JVM running for 9.652)
+2025-04-02 15:10:39.037  INFO 7260 --- [restartedMain] dev.m.Application                        : Starting Application using Java 1.8.0_202 on PTPM1-MANHND with PID 7260 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
+2025-04-02 15:10:39.038  INFO 7260 --- [restartedMain] dev.m.Application                        : No active profile set, falling back to 1 default profile: "default"
+2025-04-02 15:10:39.087  INFO 7260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-02 15:10:39.879  INFO 7260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02 15:10:39.943  INFO 7260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+2025-04-02 15:10:40.583  INFO 7260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3000 (http)
+2025-04-02 15:10:40.593  INFO 7260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02 15:10:40.593  INFO 7260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-04-02 15:10:40.719  INFO 7260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-02 15:10:40.719  INFO 7260 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1631 ms
+2025-04-02 15:10:40.732 DEBUG 7260 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
+2025-04-02 15:10:40.733 DEBUG 7260 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2025-04-02 15:10:40.902  INFO 7260 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-02 15:10:40.960  INFO 7260 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-04-02 15:10:41.171  INFO 7260 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-02 15:10:41.258  INFO 7260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Starting...
+2025-04-02 15:10:42.648  INFO 7260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Start completed.
+2025-04-02 15:10:42.688  INFO 7260 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2025-04-02 15:10:44.194  INFO 7260 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-02 15:10:44.225  INFO 7260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02 15:10:44.689  WARN 7260 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-02 15:10:44.764 DEBUG 7260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-04-02 15:10:45.364 DEBUG 7260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-04-02 15:10:45.394 DEBUG 7260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-02 15:10:45.415 DEBUG 7260 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-02 15:10:45.598  INFO 7260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-02 15:10:45.640  INFO 7260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3000 (http) with context path ''
+2025-04-02 15:10:45.649  INFO 7260 --- [restartedMain] dev.m.Application                        : Started Application in 7.115 seconds (JVM running for 8.281)
+2025-04-02 15:11:23.452  INFO 4668 --- [restartedMain] dev.m.Application                        : Starting Application using Java 1.8.0_202 on PTPM1-MANHND with PID 4668 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
+2025-04-02 15:11:23.454  INFO 4668 --- [restartedMain] dev.m.Application                        : No active profile set, falling back to 1 default profile: "default"
+2025-04-02 15:11:23.505  INFO 4668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-02 15:11:24.227  INFO 4668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02 15:11:24.293  INFO 4668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2025-04-02 15:11:24.892  INFO 4668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3000 (http)
+2025-04-02 15:11:24.898  INFO 4668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02 15:11:24.898  INFO 4668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-04-02 15:11:25.011  INFO 4668 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-02 15:11:25.012  INFO 4668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1506 ms
+2025-04-02 15:11:25.023 DEBUG 4668 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
+2025-04-02 15:11:25.024 DEBUG 4668 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2025-04-02 15:11:25.167  INFO 4668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-02 15:11:25.216  INFO 4668 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-04-02 15:11:25.377  INFO 4668 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-02 15:11:25.471  INFO 4668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Starting...
+2025-04-02 15:11:27.080  INFO 4668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Start completed.
+2025-04-02 15:11:27.103  INFO 4668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2025-04-02 15:11:28.055  INFO 4668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-02 15:11:28.066  INFO 4668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02 15:11:28.508  WARN 4668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-02 15:11:28.576 DEBUG 4668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-04-02 15:11:28.887 DEBUG 4668 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-04-02 15:11:28.916 DEBUG 4668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-02 15:11:28.936 DEBUG 4668 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-02 15:11:29.130  INFO 4668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-02 15:11:29.164  INFO 4668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3000 (http) with context path ''
+2025-04-02 15:11:29.173  INFO 4668 --- [restartedMain] dev.m.Application                        : Started Application in 6.206 seconds (JVM running for 7.328)
+2025-04-02 15:11:43.213  INFO 4668 --- [http-nio-3000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-02 15:11:43.213  INFO 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-02 15:11:43.213 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-04-02 15:11:43.214 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-04-02 15:11:43.214 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-04-02 15:11:43.216 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5368b8f7
+2025-04-02 15:11:43.216 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1f5d0dc
+2025-04-02 15:11:43.216 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-02 15:11:43.216  INFO 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-02 15:11:43.225 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:11:43.231 DEBUG 4668 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:11:43.831 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.orm.jpa.JpaSystemException: Unable to commit against JDBC Connection; nested exception is org.hibernate.TransactionException: Unable to commit against JDBC Connection
+2025-04-02 15:11:43.840 ERROR 4668 --- [http-nio-3000-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: Unable to commit against JDBC Connection; nested exception is org.hibernate.TransactionException: Unable to commit against JDBC Connection] with root cause
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-03-06 21:11:10.415 ERROR 5104 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.des' in value "${application.des}"
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:414) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929) ~[spring-context-5.3.31.jar:5.3.31]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.31.jar:5.3.31]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.18.jar:2.7.18]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.7.18.jar:2.7.18]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) [spring-boot-2.7.18.jar:2.7.18]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.18.jar:2.7.18]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.7.18.jar:2.7.18]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) [spring-boot-2.7.18.jar:2.7.18]
-	at dev.m.Application.main(Application.java:10) [classes/:na]
+org.postgresql.util.PSQLException: ERROR: prepared statement "S_1" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:330) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgConnection.executeTransactionCommand(PgConnection.java:981) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:1003) ~[postgresql-42.7.5.jar:42.7.5]
+	at com.zaxxer.hikari.pool.ProxyConnection.commit(ProxyConnection.java:387) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.commit(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:86) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:282) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.18.jar:2.7.18]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.31.jar:5.3.31]
+	at com.sun.proxy.$Proxy124.findAll(Unknown Source) ~[na:na]
+	at dev.m.service.TransactionService.getTransactions(TransactionService.java:18) ~[classes/:na]
+	at dev.m.controller.TransactionController.getTransactions(TransactionController.java:20) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-2.7.18.jar:2.7.18]
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'application.des' in value "${application.des}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.31.jar:5.3.31]
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.31.jar:5.3.31]
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.31.jar:5.3.31]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.31.jar:5.3.31]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:693) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.31.jar:5.3.31]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:408) ~[spring-beans-5.3.31.jar:5.3.31]
-	... 22 common frames omitted
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.83.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.83.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
 
+2025-04-02 15:11:43.844 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?limit=5", parameters={masked}
+2025-04-02 15:11:43.846 DEBUG 4668 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-02 15:11:43.871 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:11:43.872 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Apr 02 15:11:43 ICT 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-04-02 15:11:43.914 DEBUG 4668 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2025-04-02 15:11:44.162 DEBUG 4668 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:11:44.164 DEBUG 4668 --- [http-nio-3000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:11:44.320 DEBUG 4668 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:11:44.321 DEBUG 4668 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:11:44.330 DEBUG 4668 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:12:38.035 DEBUG 4668 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=month", parameters={masked}
+2025-04-02 15:12:38.036 DEBUG 4668 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 15:12:38.206 DEBUG 4668 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:12:38.207 DEBUG 4668 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=0.0, balance=0.0, categories=[], expense=0.0}]
+2025-04-02 15:12:38.218 DEBUG 4668 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:12:39.127 DEBUG 4668 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=week", parameters={masked}
+2025-04-02 15:12:39.128 DEBUG 4668 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 15:12:39.253 DEBUG 4668 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:12:39.254 DEBUG 4668 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=0.0, balance=0.0, categories=[], expense=0.0}]
+2025-04-02 15:12:39.255 DEBUG 4668 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:12:39.422 DEBUG 4668 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=week", parameters={masked}
+2025-04-02 15:12:39.422 DEBUG 4668 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 15:12:39.488 DEBUG 4668 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:12:39.488 DEBUG 4668 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=0.0, balance=0.0, categories=[], expense=0.0}]
+2025-04-02 15:12:39.489 DEBUG 4668 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:12:40.110 DEBUG 4668 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=month", parameters={masked}
+2025-04-02 15:12:40.110 DEBUG 4668 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 15:12:40.242 DEBUG 4668 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:12:40.243 DEBUG 4668 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=0.0, balance=0.0, categories=[], expense=0.0}]
+2025-04-02 15:12:40.243 DEBUG 4668 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:12:40.488 DEBUG 4668 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=year", parameters={masked}
+2025-04-02 15:12:40.488 DEBUG 4668 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 15:12:40.553 DEBUG 4668 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:12:40.553 DEBUG 4668 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=0.0, balance=0.0, categories=[], expense=0.0}]
+2025-04-02 15:12:40.554 DEBUG 4668 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:12:41.358 DEBUG 4668 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:12:41.359 DEBUG 4668 --- [http-nio-3000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:12:41.551 DEBUG 4668 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:12:41.553 DEBUG 4668 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:12:41.553 DEBUG 4668 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:14:09.008  INFO 15576 --- [restartedMain] dev.m.Application                        : Starting Application using Java 1.8.0_202 on PTPM1-MANHND with PID 15576 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
+2025-04-02 15:14:09.010  INFO 15576 --- [restartedMain] dev.m.Application                        : No active profile set, falling back to 1 default profile: "default"
+2025-04-02 15:14:09.054  INFO 15576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-02 15:14:09.734  INFO 15576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02 15:14:09.787  INFO 15576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2025-04-02 15:14:10.327  INFO 15576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3000 (http)
+2025-04-02 15:14:10.333  INFO 15576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02 15:14:10.333  INFO 15576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-04-02 15:14:10.433  INFO 15576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-02 15:14:10.434  INFO 15576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1379 ms
+2025-04-02 15:14:10.445 DEBUG 15576 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
+2025-04-02 15:14:10.446 DEBUG 15576 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2025-04-02 15:14:10.581  INFO 15576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-02 15:14:10.620  INFO 15576 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-04-02 15:14:10.787  INFO 15576 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-02 15:14:10.870  INFO 15576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Starting...
+2025-04-02 15:14:12.561  INFO 15576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Start completed.
+2025-04-02 15:14:12.584  INFO 15576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2025-04-02 15:14:14.101  INFO 15576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-02 15:14:14.113  INFO 15576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02 15:14:14.588  WARN 15576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-02 15:14:14.652 DEBUG 15576 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-04-02 15:14:14.959 DEBUG 15576 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-04-02 15:14:14.988 DEBUG 15576 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-02 15:14:15.010 DEBUG 15576 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-02 15:14:15.193  INFO 15576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-02 15:14:15.228  INFO 15576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3000 (http) with context path ''
+2025-04-02 15:14:15.238  INFO 15576 --- [restartedMain] dev.m.Application                        : Started Application in 6.71 seconds (JVM running for 7.927)
+2025-04-02 15:14:29.463  INFO 15576 --- [http-nio-3000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-02 15:14:29.463  INFO 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-02 15:14:29.463 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-04-02 15:14:29.463 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-04-02 15:14:29.463 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-04-02 15:14:29.465 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@771c9381
+2025-04-02 15:14:29.465 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@58e9e88e
+2025-04-02 15:14:29.465 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-02 15:14:29.465  INFO 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-02 15:14:29.477 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:14:29.481 DEBUG 15576 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:14:30.025 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:14:30.027 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:14:30.052 DEBUG 15576 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:14:31.095 DEBUG 15576 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:14:31.096 DEBUG 15576 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:14:31.323 DEBUG 15576 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:14:31.323 DEBUG 15576 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:14:31.324 DEBUG 15576 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:17:13.845 DEBUG 15576 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:17:13.845 DEBUG 15576 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:17:14.162 DEBUG 15576 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.orm.jpa.JpaSystemException: Unable to commit against JDBC Connection; nested exception is org.hibernate.TransactionException: Unable to commit against JDBC Connection
+2025-04-02 15:17:14.168 ERROR 15576 --- [http-nio-3000-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: Unable to commit against JDBC Connection; nested exception is org.hibernate.TransactionException: Unable to commit against JDBC Connection] with root cause
+
+org.postgresql.util.PSQLException: ERROR: prepared statement "S_1" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:330) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgConnection.executeTransactionCommand(PgConnection.java:981) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:1003) ~[postgresql-42.7.5.jar:42.7.5]
+	at com.zaxxer.hikari.pool.ProxyConnection.commit(ProxyConnection.java:387) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.commit(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:86) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:282) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.31.jar:5.3.31]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.18.jar:2.7.18]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.31.jar:5.3.31]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.31.jar:5.3.31]
+	at com.sun.proxy.$Proxy124.findAll(Unknown Source) ~[na:na]
+	at dev.m.service.TransactionService.getTransactions(TransactionService.java:18) ~[classes/:na]
+	at dev.m.controller.TransactionController.getTransactions(TransactionController.java:20) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.83.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.83.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.83.jar:9.0.83]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
+
+2025-04-02 15:17:14.173 DEBUG 15576 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?limit=5", parameters={masked}
+2025-04-02 15:17:14.176 DEBUG 15576 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-02 15:17:14.192 DEBUG 15576 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:17:14.192 DEBUG 15576 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Apr 02 15:17:14 ICT 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-04-02 15:17:14.201 DEBUG 15576 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2025-04-02 15:17:14.828 DEBUG 15576 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:17:14.829 DEBUG 15576 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:17:15.054 DEBUG 15576 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:17:15.054 DEBUG 15576 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:17:15.056 DEBUG 15576 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:18:29.559 DEBUG 15576 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:18:29.559 DEBUG 15576 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:18:29.782 DEBUG 15576 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-04-02 15:18:29.783 DEBUG 15576 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:18:29.784 DEBUG 15576 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:31:18.701  INFO 728 --- [restartedMain] dev.m.Application                        : Starting Application using Java 1.8.0_202 on PTPM1-MANHND with PID 728 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
+2025-04-02 15:31:18.703  INFO 728 --- [restartedMain] dev.m.Application                        : No active profile set, falling back to 1 default profile: "default"
+2025-04-02 15:31:18.748  INFO 728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-02 15:31:19.440  INFO 728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02 15:31:19.497  INFO 728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2025-04-02 15:31:20.033  INFO 728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3000 (http)
+2025-04-02 15:31:20.039  INFO 728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02 15:31:20.039  INFO 728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-04-02 15:31:20.141  INFO 728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-02 15:31:20.141  INFO 728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1392 ms
+2025-04-02 15:31:20.153 DEBUG 728 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
+2025-04-02 15:31:20.153 DEBUG 728 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2025-04-02 15:31:20.293  INFO 728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-02 15:31:20.339  INFO 728 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-04-02 15:31:20.533  INFO 728 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-02 15:31:20.626  INFO 728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Starting...
+2025-04-02 15:31:22.112  INFO 728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Start completed.
+2025-04-02 15:31:22.136  INFO 728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2025-04-02 15:31:23.657  INFO 728 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-02 15:31:23.682  INFO 728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02 15:31:24.561  WARN 728 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-02 15:31:24.670 DEBUG 728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-04-02 15:31:25.125 DEBUG 728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-04-02 15:31:25.161 DEBUG 728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-02 15:31:25.189 DEBUG 728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-02 15:31:25.408  INFO 728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-02 15:31:25.445  INFO 728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3000 (http) with context path ''
+2025-04-02 15:31:25.455  INFO 728 --- [restartedMain] dev.m.Application                        : Started Application in 7.229 seconds (JVM running for 8.408)
+2025-04-02 15:31:41.320  INFO 728 --- [http-nio-3000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-02 15:31:41.321  INFO 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-02 15:31:41.321 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-04-02 15:31:41.321 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-04-02 15:31:41.321 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-04-02 15:31:41.322 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4c5889c2
+2025-04-02 15:31:41.323 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@73b24fcd
+2025-04-02 15:31:41.323 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-02 15:31:41.323  INFO 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-02 15:31:41.330 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:31:41.334 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:31:41.903 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-04-02 15:31:41.904 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:31:41.933 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:32:26.196 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:32:26.197 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:32:26.424 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-04-02 15:32:26.424 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:32:26.426 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:32:41.685 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:32:41.685 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:32:41.912 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:32:41.913 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:32:41.914 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:32:43.462 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:32:43.463 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:32:43.696 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:32:43.696 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:32:43.697 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:33:12.350 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:33:12.351 DEBUG 728 --- [http-nio-3000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:33:12.577 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:33:12.578 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:33:12.579 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:33:13.762 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:33:13.763 DEBUG 728 --- [http-nio-3000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:33:13.989 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:33:13.990 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
+2025-04-02 15:33:13.992 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:35:06.185 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:35:06.185 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:35:06.419 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-04-02 15:35:06.420 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:35:06.427 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:38:01.314 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=month", parameters={masked}
+2025-04-02 15:38:01.314 DEBUG 728 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 15:38:01.500 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:38:01.500 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=0.0, balance=-11111.0, categories=[{percentage=100.0, name=1}], expense=11111.0}]
+2025-04-02 15:38:01.512 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:38:02.755 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:38:02.756 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:38:02.971 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:38:02.971 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:38:02.973 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:47:27.609 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:47:27.610 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:47:27.832 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:47:27.833 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:47:27.837 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:47:29.028 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:47:29.029 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:47:29.248 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:47:29.248 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:47:29.249 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:47:46.293 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:47:46.293 DEBUG 728 --- [http-nio-3000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:47:46.513 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:47:46.514 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:47:46.516 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:47:47.869 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:47:47.869 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:47:48.095 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:47:48.095 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:47:48.098 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:48:02.540 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:48:02.540 DEBUG 728 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:48:02.784 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-04-02 15:48:02.785 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:48:02.786 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:49:56.638 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:49:56.639 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:49:56.892 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:49:56.893 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:49:56.894 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:49:58.128 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:49:58.128 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:49:58.410 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:49:58.410 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:49:58.412 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:51:43.993 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:51:43.993 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:51:44.230 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:51:44.231 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:51:44.242 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 15:51:45.438 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 15:51:45.439 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 15:51:45.680 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 15:51:45.680 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 15:51:45.681 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:03:21.713 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:03:21.714 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:03:21.920 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:03:21.920 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:03:21.921 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:03:22.671 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:03:22.671 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:03:22.870 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:03:22.870 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:03:22.871 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:03:51.407 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/transactions", parameters={}
+2025-04-02 16:03:51.407 DEBUG 728 --- [http-nio-3000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#addTransaction(Transaction)
+2025-04-02 16:03:51.409 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:03:51.416 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/transactions", parameters={}
+2025-04-02 16:03:51.416 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#addTransaction(Transaction)
+2025-04-02 16:03:51.465 DEBUG 728 --- [http-nio-3000-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Transaction(id=null, amount=1000.0, category=, type=expense, date=2025-04-02, note=manhnd)]
+2025-04-02 16:03:51.787 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:03:51.787 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Transaction(id=5a5aca33-0457-47ff-b251-a42a618d1753, amount=1000.0, category=, type=expense, date=20 (truncated)...]
+2025-04-02 16:03:51.788 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:04:35.560 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:04:35.560 DEBUG 728 --- [http-nio-3000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:04:35.773 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:04:35.773 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:04:35.774 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:04:36.038 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:04:36.039 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:04:36.170 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:04:36.170 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:04:36.171 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:07:38.005 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=month", parameters={masked}
+2025-04-02 16:07:38.005 DEBUG 728 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 16:07:38.146 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:07:38.146 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=11111.0, balance=-112111.0, categories=[{percentage=0.8115433932252357, name=}, {percentage= (truncated)...]
+2025-04-02 16:07:38.147 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:07:39.612 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=week", parameters={masked}
+2025-04-02 16:07:39.612 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 16:07:39.743 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:07:39.744 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=11111.0, balance=-112111.0, categories=[{percentage=0.8115433932252357, name=}, {percentage= (truncated)...]
+2025-04-02 16:07:39.745 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:07:40.041 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=month", parameters={masked}
+2025-04-02 16:07:40.041 DEBUG 728 --- [http-nio-3000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 16:07:40.123 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:07:40.129 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=11111.0, balance=-112111.0, categories=[{percentage=0.8115433932252357, name=}, {percentage= (truncated)...]
+2025-04-02 16:07:40.129 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:07:40.513 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=year", parameters={masked}
+2025-04-02 16:07:40.514 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 16:07:40.582 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:07:40.582 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=11111.0, balance=-112111.0, categories=[{percentage=0.8115433932252357, name=}, {percentage= (truncated)...]
+2025-04-02 16:07:40.583 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:07:41.283 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:07:41.283 DEBUG 728 --- [http-nio-3000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:07:41.483 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:07:41.483 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:07:41.484 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:09:07.111 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:09:07.112 DEBUG 728 --- [http-nio-3000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:09:07.310 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:09:07.311 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:09:07.312 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:09:07.575 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:09:07.575 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:09:07.710 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:09:07.710 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:09:07.711 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:25:18.651 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:25:18.651 DEBUG 728 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:25:18.851 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:25:18.852 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:25:18.853 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:25:19.499 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:25:19.499 DEBUG 728 --- [http-nio-3000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:25:19.699 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:25:19.700 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:25:19.701 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:25:22.094 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:25:22.094 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:25:22.293 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:25:22.293 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:25:22.294 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:25:22.597 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:25:22.598 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:25:22.734 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:25:22.734 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:25:22.735 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:30:27.325 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:30:27.325 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:30:27.527 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:30:27.527 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:30:27.528 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:30:27.899 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:30:27.899 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:30:28.034 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:30:28.034 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:30:28.035 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:31:43.366 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:31:43.366 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:31:43.587 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:31:43.588 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:31:43.590 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:31:43.941 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:31:43.942 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:31:44.085 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:31:44.086 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:31:44.087 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:32:22.639 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:32:22.639 DEBUG 728 --- [http-nio-3000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:32:22.851 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:32:22.852 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:32:22.854 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:32:23.192 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:32:23.193 DEBUG 728 --- [http-nio-3000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:32:23.333 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:32:23.333 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:32:23.335 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:32:48.382 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:32:48.382 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:32:48.536 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:32:48.537 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:32:48.589 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:32:48.590 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:32:48.591 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:32:48.708 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:32:48.708 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:32:48.709 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:32:48.993 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:32:48.993 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:32:49.143 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:32:49.143 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:32:49.144 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:58:49.884 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:58:49.884 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:58:50.099 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:58:50.100 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:58:50.101 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:58:50.490 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:58:50.490 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:58:50.633 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:58:50.633 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:58:50.634 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:58:53.953 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:58:53.953 DEBUG 728 --- [http-nio-3000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:58:54.170 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:58:54.170 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:58:54.171 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:58:54.652 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:58:54.652 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:58:54.792 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:58:54.793 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:58:54.794 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:58:57.634 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:58:57.634 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:58:57.841 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:58:57.842 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:58:57.843 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:58:59.141 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:58:59.142 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:58:59.354 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:58:59.354 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:58:59.355 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:59:50.624 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:59:50.624 DEBUG 728 --- [http-nio-3000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:59:50.833 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:59:50.833 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:59:50.834 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 16:59:51.228 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 16:59:51.228 DEBUG 728 --- [http-nio-3000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 16:59:51.371 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 16:59:51.371 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 16:59:51.372 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:18:35.407 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:18:35.408 DEBUG 728 --- [http-nio-3000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:18:35.780 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:18:35.780 DEBUG 728 --- [http-nio-3000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:18:35.782 DEBUG 728 --- [http-nio-3000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:18:36.135 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:18:36.136 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:18:36.277 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:18:36.277 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:18:36.278 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:18:56.615 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:18:56.615 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:18:56.860 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:18:56.861 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:18:56.861 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:18:57.196 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:18:57.196 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:18:57.334 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:18:57.334 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:18:57.335 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:19:02.247 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:19:02.247 DEBUG 728 --- [http-nio-3000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:19:02.459 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:19:02.459 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:19:02.460 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:19:02.796 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:19:02.797 DEBUG 728 --- [http-nio-3000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:19:02.936 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:19:02.936 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:19:02.937 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:19:15.987 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:19:15.987 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:19:16.197 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:19:16.198 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:19:16.199 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:19:16.467 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:19:16.467 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:19:16.605 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:19:16.605 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:19:16.606 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:19:19.255 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:19:19.255 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:19:19.464 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:19:19.464 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:19:19.465 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:19:19.858 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:19:19.858 DEBUG 728 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:19:20.021 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:19:20.021 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:19:20.022 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:19:22.560 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:19:22.561 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:19:22.761 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:19:22.761 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:19:22.762 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:19:23.182 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:19:23.183 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:19:23.316 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:19:23.317 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:19:23.318 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:20:47.099 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:20:47.100 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:20:47.308 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:20:47.309 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:20:47.310 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:20:47.734 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:20:47.735 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:20:47.873 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:20:47.874 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:20:47.875 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:20:50.502 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:20:50.503 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:20:50.710 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:20:50.710 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:20:50.710 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:20:51.092 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:20:51.093 DEBUG 728 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:20:51.234 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:20:51.234 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:20:51.235 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:20:54.134 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:20:54.135 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:20:54.343 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:20:54.344 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:20:54.344 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:20:54.755 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:20:54.755 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:20:54.893 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:20:54.893 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:20:54.894 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:28:29.623 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:28:29.624 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:28:29.827 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:28:29.828 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:28:29.830 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:28:30.275 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:28:30.276 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:28:30.702 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:28:30.702 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:28:30.704 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:31:06.140 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:31:06.140 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:31:06.269 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:31:06.269 DEBUG 728 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:31:06.322 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:31:06.322 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:31:06.323 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:31:06.443 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:31:06.443 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:31:06.444 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:31:06.721 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:31:06.722 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:31:06.843 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:31:06.843 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:31:06.844 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:32:16.893 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:32:16.893 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:32:17.077 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:32:17.077 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:32:17.078 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:32:17.374 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:32:17.375 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:32:17.502 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:32:17.502 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:32:17.503 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:34:19.819 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:34:19.819 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:34:19.996 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:34:19.997 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:34:19.998 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:34:20.301 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:34:20.301 DEBUG 728 --- [http-nio-3000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:34:20.422 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:34:20.423 DEBUG 728 --- [http-nio-3000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:34:20.423 DEBUG 728 --- [http-nio-3000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:35:32.691 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=month", parameters={masked}
+2025-04-02 17:35:32.691 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 17:35:32.828 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:35:32.828 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=11111.0, balance=-112111.0, categories=[{percentage=0.8115433932252357, name=}, {percentage= (truncated)...]
+2025-04-02 17:35:32.829 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:35:36.499 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/stats?filter=week", parameters={masked}
+2025-04-02 17:35:36.499 DEBUG 728 --- [http-nio-3000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.StatisticsController#getStats(String)
+2025-04-02 17:35:36.622 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:35:36.623 DEBUG 728 --- [http-nio-3000-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{income=11111.0, balance=-112111.0, categories=[{percentage=0.8115433932252357, name=}, {percentage= (truncated)...]
+2025-04-02 17:35:36.624 DEBUG 728 --- [http-nio-3000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:36:16.062 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:36:16.062 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:36:16.240 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:36:16.241 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:36:16.243 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:41:35.662 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/transactions", parameters={}
+2025-04-02 17:41:35.663 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#addTransaction(Transaction)
+2025-04-02 17:41:35.664 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:41:35.668 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/transactions", parameters={}
+2025-04-02 17:41:35.668 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#addTransaction(Transaction)
+2025-04-02 17:41:35.669 DEBUG 728 --- [http-nio-3000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Transaction(id=null, amount=1000000.0, category=Hóa đơn, type=income, date=2025-04-02, note=tiền ăn)]
+2025-04-02 17:41:35.784 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/transactions", parameters={}
+2025-04-02 17:41:35.785 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#addTransaction(Transaction)
+2025-04-02 17:41:35.785 DEBUG 728 --- [http-nio-3000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Transaction(id=null, amount=1000000.0, category=Hóa đơn, type=income, date=2025-04-02, note=tiền ăn)]
+2025-04-02 17:41:35.922 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:41:35.922 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Transaction(id=4ebbae26-2630-4b57-b406-0f65673e11b6, amount=1000000.0, category=Hóa đơn, type=income (truncated)...]
+2025-04-02 17:41:35.925 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:41:36.110 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:41:36.111 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Transaction(id=b0ed10cf-4948-478f-9e99-947260b31307, amount=1000000.0, category=Hóa đơn, type=income (truncated)...]
+2025-04-02 17:41:36.112 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:41:49.854 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:41:49.854 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:41:50.123 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:41:50.123 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:41:50.124 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:41:50.375 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:41:50.375 DEBUG 728 --- [http-nio-3000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:41:50.555 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:41:50.555 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:41:50.556 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:43:31.777 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:43:31.778 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:43:32.018 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:43:32.018 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:43:32.019 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:43:32.169 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 17:43:32.169 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 17:43:32.350 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:43:32.352 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing dev.m.model.Transaction instances]
+2025-04-02 17:43:32.352 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 17:43:48.180 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/transactions", parameters={}
+2025-04-02 17:43:48.181 DEBUG 728 --- [http-nio-3000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#addTransaction(Transaction)
+2025-04-02 17:43:48.182 DEBUG 728 --- [http-nio-3000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Transaction(id=null, amount=12222.0, category=Ăn uống, type=expense, date=2025-04-02, note=âsá)]
+2025-04-02 17:43:48.422 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 17:43:48.422 DEBUG 728 --- [http-nio-3000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Transaction(id=2e2e8245-92f6-4689-8ac2-61440bab59d9, amount=12222.0, category=Ăn uống, type=expense, (truncated)...]
+2025-04-02 17:43:48.425 DEBUG 728 --- [http-nio-3000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 21:28:29.432  WARN 728 --- [API-BACKEND housekeeper] com.zaxxer.hikari.pool.HikariPool        : API-BACKEND - Thread starvation or clock leap detected (housekeeper delta=3h39m44s290ms722µs900ns).
+2025-04-02 21:31:06.118 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 21:31:06.118 DEBUG 728 --- [http-nio-3000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 21:31:06.410 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 21:31:06.410 DEBUG 728 --- [http-nio-3000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing dev.m.model.Transaction instances]
+2025-04-02 21:31:06.411 DEBUG 728 --- [http-nio-3000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 21:31:06.627 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 21:31:06.627 DEBUG 728 --- [http-nio-3000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 21:31:06.827 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 21:31:06.828 DEBUG 728 --- [http-nio-3000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing dev.m.model.Transaction instances]
+2025-04-02 21:31:06.828 DEBUG 728 --- [http-nio-3000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 21:31:54.681 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 21:31:54.681 DEBUG 728 --- [http-nio-3000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 21:31:54.983 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 21:31:54.983 DEBUG 728 --- [http-nio-3000-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing dev.m.model.Transaction instances]
+2025-04-02 21:31:54.984 DEBUG 728 --- [http-nio-3000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 21:31:55.287 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 21:31:55.287 DEBUG 728 --- [http-nio-3000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 21:31:55.499 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 21:31:55.499 DEBUG 728 --- [http-nio-3000-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing dev.m.model.Transaction instances]
+2025-04-02 21:31:55.500 DEBUG 728 --- [http-nio-3000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 21:43:28.041 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 21:43:28.041 DEBUG 728 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 21:43:28.386 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 21:43:28.386 DEBUG 728 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing dev.m.model.Transaction instances]
+2025-04-02 21:43:28.388 DEBUG 728 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 21:43:28.981 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 21:43:28.982 DEBUG 728 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 21:43:29.293 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 21:43:29.294 DEBUG 728 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing dev.m.model.Transaction instances]
+2025-04-02 21:43:29.294 DEBUG 728 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 21:45:00.976  INFO 16760 --- [restartedMain] dev.m.Application                        : Starting Application using Java 1.8.0_202 on PTPM1-MANHND with PID 16760 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
+2025-04-02 21:45:00.977  INFO 16760 --- [restartedMain] dev.m.Application                        : No active profile set, falling back to 1 default profile: "default"
+2025-04-02 21:45:01.045  INFO 16760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-02 21:45:01.880  INFO 16760 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02 21:45:01.953  INFO 16760 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2025-04-02 21:45:02.805  INFO 16760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3000 (http)
+2025-04-02 21:45:02.814  INFO 16760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02 21:45:02.814  INFO 16760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-04-02 21:45:02.924  INFO 16760 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-02 21:45:02.924  INFO 16760 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1877 ms
+2025-04-02 21:45:02.936 DEBUG 16760 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
+2025-04-02 21:45:02.936 DEBUG 16760 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2025-04-02 21:45:03.121  INFO 16760 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-02 21:45:03.194  INFO 16760 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-04-02 21:45:03.509  INFO 16760 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-02 21:45:03.655  INFO 16760 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Starting...
+2025-04-02 21:45:05.631  INFO 16760 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Start completed.
+2025-04-02 21:45:05.683  INFO 16760 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2025-04-02 21:45:06.937  INFO 16760 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-02 21:45:06.973  INFO 16760 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02 21:45:07.494  WARN 16760 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-02 21:45:07.580 DEBUG 16760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-04-02 21:45:07.875 DEBUG 16760 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-04-02 21:45:07.905 DEBUG 16760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-02 21:45:07.925 DEBUG 16760 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-02 21:45:08.240  INFO 16760 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-02 21:45:08.274  INFO 16760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3000 (http) with context path ''
+2025-04-02 21:45:08.284  INFO 16760 --- [restartedMain] dev.m.Application                        : Started Application in 8.683 seconds (JVM running for 14.476)
+2025-04-02 21:46:04.812  INFO 16148 --- [restartedMain] dev.m.Application                        : Starting Application using Java 1.8.0_202 on PTPM1-MANHND with PID 16148 (D:\dev\back-end\target\classes started by admin in D:\dev\back-end)
+2025-04-02 21:46:04.813  INFO 16148 --- [restartedMain] dev.m.Application                        : No active profile set, falling back to 1 default profile: "default"
+2025-04-02 21:46:04.856  INFO 16148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-02 21:46:05.578  INFO 16148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02 21:46:05.641  INFO 16148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2025-04-02 21:46:06.253  INFO 16148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3000 (http)
+2025-04-02 21:46:06.262  INFO 16148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02 21:46:06.263  INFO 16148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-04-02 21:46:06.388  INFO 16148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-02 21:46:06.389  INFO 16148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1532 ms
+2025-04-02 21:46:06.406 DEBUG 16148 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648
+2025-04-02 21:46:06.407 DEBUG 16148 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2025-04-02 21:46:06.597  INFO 16148 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-02 21:46:06.646  INFO 16148 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-04-02 21:46:06.896  INFO 16148 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-04-02 21:46:07.005  INFO 16148 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Starting...
+2025-04-02 21:46:08.449  INFO 16148 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : API-BACKEND - Start completed.
+2025-04-02 21:46:08.470  INFO 16148 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2025-04-02 21:46:09.495  INFO 16148 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-02 21:46:09.510  INFO 16148 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02 21:46:10.154 DEBUG 16148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-04-02 21:46:10.523 DEBUG 16148 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-04-02 21:46:10.571 DEBUG 16148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-02 21:46:10.606 DEBUG 16148 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-02 21:46:10.881  INFO 16148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-02 21:46:10.926  INFO 16148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3000 (http) with context path ''
+2025-04-02 21:46:10.937  INFO 16148 --- [restartedMain] dev.m.Application                        : Started Application in 6.597 seconds (JVM running for 7.718)
+2025-04-02 21:50:50.521  INFO 16148 --- [http-nio-3000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-02 21:50:50.521  INFO 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-02 21:50:50.521 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-04-02 21:50:50.521 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-04-02 21:50:50.522 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-04-02 21:50:50.523 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1f7e064d
+2025-04-02 21:50:50.524 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@16145ff7
+2025-04-02 21:50:50.524 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-02 21:50:50.525  INFO 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-02 21:50:50.534 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 21:50:50.540 DEBUG 16148 --- [http-nio-3000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 21:50:51.282 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 21:50:51.283 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing dev.m.model.Transaction instances]
+2025-04-02 21:50:51.329 DEBUG 16148 --- [http-nio-3000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-02 21:50:51.502 DEBUG 16148 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/transactions?limit=5", parameters={masked}
+2025-04-02 21:50:51.503 DEBUG 16148 --- [http-nio-3000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to dev.m.controller.TransactionController#getTransactions(int, int)
+2025-04-02 21:50:51.712 DEBUG 16148 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-02 21:50:51.712 DEBUG 16148 --- [http-nio-3000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 2 containing dev.m.model.Transaction instances]
+2025-04-02 21:50:51.713 DEBUG 16148 --- [http-nio-3000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
